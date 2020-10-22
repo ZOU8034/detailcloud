@@ -1,8 +1,8 @@
 server:
-  port: 7001
+  port: 7002
 eureka:
   instance:
-    hostname: eureka1
+    hostname: eureka2
   client:                   #解决eureka启动时报错问题 配置的客户端
     fetch-registry: false      #要不要去注册中心获取其他服务的地址，解决eureka启动时的错误
     register-with-eureka: false      #是否当前客户端要注册到eureka
@@ -11,6 +11,7 @@ eureka:
   server:
     eviction-interval-timer-in-ms: 60000    #设置清理的间隔时间，ms (默认是60秒）
     enable-self-preservation: true      #设置为false表示关闭保护模式,在保护模式下，如因为网络或其它问题服务提供者掉线的话，eureka不会立即清空服务列表.
+
 #eureka模块里面application.yml文件加安全配置
 spring:
   security:

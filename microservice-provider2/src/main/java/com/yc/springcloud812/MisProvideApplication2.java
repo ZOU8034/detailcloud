@@ -8,10 +8,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableDiscoveryClient //启动服务端 发现客户端信息以获取当前provider的注册信息
-public class MisProvideApplication {
+public class MisProvideApplication2 {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MisProvideApplication.class, args);
+		SpringApplication.run(MisProvideApplication2.class, args);
 	}
 
 }
